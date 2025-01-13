@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { MenuIcon } from 'lucide-react'
 import data from '@/lib/data'
 import Search from './search'
+import Image from 'next/image'
 
 export default function Header() {
   return (
@@ -16,6 +17,12 @@ export default function Header() {
               href='/'
               className='flex items-center header-button font-extrabold text-2xl m-1 '
             >
+              <Image
+                src='/logo.png'
+                width={40}
+                height={40}
+                alt={`${APP_NAME} logo`}
+              />
               {APP_NAME}
             </Link>
           </div>
